@@ -22,7 +22,8 @@ const CreateTask = () => {
             taskName,
             taskDescription,
             taskDeadline,
-            priority
+            priority,
+            status: "not completed"
         }
 
         addItem("tasks", taskObj)
