@@ -1,0 +1,65 @@
+.box {
+    background: #bdbdbd;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.title {
+    padding: 17px 12px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.title .task_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.title .arrow {
+    font-size: 27px;
+}
+
+.task {
+    background: #eaeaea;
+    color: #494949;
+    padding: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .box {
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 720px) {
+    .box {
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1060px) {
+    .box {
+        width: 700px;
+    }
+}
+
+@media screen and (min-width: 1060px) and (max-width: 1280px) {
+    .box {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 1921px) {}

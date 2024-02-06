@@ -16,12 +16,13 @@ const CreateTask = () => {
         const form = e.target
         const taskName = form.name.value
         const taskDescription = form.description.value
-        const taskDeadline = form.deadline.value || "no date"
+        const taskDeadline = form.deadline.value || ""
 
         const taskObj = {
             taskName,
             taskDescription,
-            taskDeadline
+            taskDeadline,
+            priority
         }
 
         addItem("tasks", taskObj)

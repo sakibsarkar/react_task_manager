@@ -6,5 +6,5 @@ export const addItem = (itemName, item) => {
 }
 
 export const getItem = (itemName) => {
-    return JSON.parse(localStorage.getItem(itemName))
+    return JSON.parse(localStorage.getItem(itemName)) || []
 }
