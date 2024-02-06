@@ -1,0 +1,199 @@
+nav {
+    width: 100vw;
+    padding: 10px 0;
+    box-shadow: 0 2px 16.8px 3.2px #00264214;
+}
+
+.navWrapper {
+    max-width: calc(1300px - 70px);
+    /*decrease the padding from main width  */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+}
+
+.logo img {
+    width: 160px;
+}
+
+.navWrapper ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.navWrapper ul li a {
+    font-size: 18px;
+    color: black;
+    position: relative;
+}
+
+.navWrapper ul li a::after {
+    content: "";
+    font-size: 18px;
+    color: black;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #37b5ff;
+    transition: 0.3s;
+    left: 0;
+    bottom: -5px;
+}
+
+.navWrapper ul li a:hover::after {
+    width: 100%;
+    height: 2px;
+
+}
+
+.navWrapper ul li .active {
+    position: relative;
+}
+
+.navWrapper ul li .active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #37b5ff;
+    left: 0;
+    bottom: -5px;
+}
+
+
+.navWrapper .authButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #37b5ff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navWrapper .authButton:hover {
+    background-color: transparent;
+    box-shadow: inset 120px 40px #37b5ff;
+    color: white;
+
+}
+
+.navWrapper .authButton:hover .authLink {
+    color: white;
+
+}
+
+.navWrapper .authButton .authLink {
+    color: rgb(0, 0, 0);
+}
+
+.navWrapper .authButton .authLink:hover {
+    text-decoration: underline;
+
+}
+
+
+
+.userBox {
+    position: relative;
+}
+
+.userImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #37b5ff;
+    padding: 3px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.userImg img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+.userModal {
+    position: absolute;
+    box-shadow: 0 2px 16.8px 3.2px #00264214;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    z-index: 99;
+    background: white;
+    gap: 20px;
+    right: 5px;
+    top: 51px;
+    border-radius: 5px;
+}
+
+
+.userModal button {
+    background: #ed3434;
+    border: none;
+    color: white;
+    padding: 4px 5px;
+    cursor: pointer;
+}
+
+
+.mobileNav {
+    display: none;
+    padding: 0 30px 0 0;
+    position: relative;
+}
+
+
+
+.mobileNav .menuIcon {
+    font-size: 24px;
+
+}
+
+
+.navModal {
+    position: absolute;
+    box-shadow: 0 2px 16.8px 3.2px #00264214;
+    justify-content: center;
+    gap: 21px;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    width: 154px;
+    height: 158px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    top: 30px;
+}
+
+
+@media screen and (max-width: 480px) {
+    .navWrapper {
+        display: none;
+    }
+
+    .mobileNav {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 730px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1921px) {}
