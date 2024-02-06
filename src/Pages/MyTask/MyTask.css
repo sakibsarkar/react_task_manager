@@ -27,3 +27,16 @@
     align-items: center;
     gap: 5px;
 }
+
+
+.filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter select {
+    cursor: pointer;
+    height: 30px;
+}

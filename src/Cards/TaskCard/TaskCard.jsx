@@ -8,7 +8,7 @@ import { RxCross2 } from "react-icons/rx";
 import { toast } from "sonner";
 import { getItem } from "../../Hooks & Func/Localstorage";
 
-const TaskCard = ({ task, setShouldOpen, shouldOpen, index, setAllTask, }) => {
+const TaskCard = ({ task, setShouldOpen, shouldOpen, index, setTask_data, }) => {
     const { taskName, taskDescription, taskDeadline, priority, status } = task || {}
 
     const isCompleted = status === "completed" ? true : false
@@ -39,7 +39,7 @@ const TaskCard = ({ task, setShouldOpen, shouldOpen, index, setAllTask, }) => {
                 localStorage.setItem("tasks", JSON.stringify(allTask))
 
                 // adding the new tasks in state
-                setAllTask(allTask)
+                setTask_data(allTask)
                 toast.success("Task Deleted Successfully")
 
             }
@@ -59,7 +59,7 @@ const TaskCard = ({ task, setShouldOpen, shouldOpen, index, setAllTask, }) => {
         allTask[index].status = "completed"
 
         //assigning the changed task in state
-        setAllTask(allTask)
+        setTask_data(allTask)
 
         // setting the new task in localstorage
         localStorage.setItem("tasks", JSON.stringify(allTask))
@@ -89,7 +89,7 @@ const TaskCard = ({ task, setShouldOpen, shouldOpen, index, setAllTask, }) => {
 
 
         // changing stats and localstorage
-        setAllTask(allTask)
+        setTask_data(allTask)
         localStorage.setItem("tasks", JSON.stringify(allTask))
         toast.success("task updated")
         setShowForm(false)

@@ -27,11 +27,6 @@ const Dashbar = () => {
                     <NavLink to={"/task/createTask"}><MdOutlineCreateNewFolder />Create task</NavLink>
                     <NavLink to={"/task/myTask"}><LiaTasksSolid />My Task</NavLink>
                     <NavLink to={"/task/completed"}><MdTask />Completed Task</NavLink>
-
-                    <NavLink to={"/dashboard/toDo"}><BiTask />To-do Task</NavLink>
-                    <NavLink to={"/dashboard/ongoing"}><LuFileClock />OnGoing Task</NavLink>
-                    <NavLink to={"/dashboard/profile"}><FaRegUser />My profile</NavLink>
-                    
                     <NavLink to={"/"}><IoIosHome />Home</NavLink>
                 </div>
 

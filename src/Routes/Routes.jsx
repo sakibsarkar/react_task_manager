@@ -28,6 +28,11 @@ export const routes = createBrowserRouter([
                 path: "/task/createTask",
                 element: <CreateTask />
             }
+            ,
+            {
+                path: "/task/completed",
+                element: <CreateTask />
+            }
         ]
     }
 ])
