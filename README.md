@@ -1,8 +1,10 @@
-# React + Vite
+# Task Manager - Task Management System
+## 🚀 Live link - [Task Manager](https://react-task-manage.netlify.app/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⚗️⚙️ How to use & Features
+* Click `My task` from the navbar to manage your task from the dashboard
+* `Create task` for creating new task
+* `My task` has filtering option based on the task priority
+* Every task "not-conplete" task has 3 action button to Delete,Edit and complete the task
+* Action buttons are only available when the user is filtering task by `All` task
+* Only `not-completed` task can be edited

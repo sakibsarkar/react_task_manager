@@ -168,6 +168,15 @@
 }
 
 
+.bugMsg {
+    color: rgb(216, 133, 78);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+
 @media screen and (max-width: 400px) {
     .box {
         width: 95%;

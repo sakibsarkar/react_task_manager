@@ -1,6 +1,7 @@
 import "./TaskCard.css";
 import Swal from "sweetalert2";
 import { useEffect, useState } from "react";
+import { CiWarning } from "react-icons/ci";
 import { FaRegTrashCan } from "react-icons/fa6";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import { MdOutlineDone } from "react-icons/md";
@@ -139,6 +140,13 @@ const TaskCard = ({ task, setShouldOpen, shouldOpen, index, setTask_data, filter
                             <button
                                 style={{ background: "#fd3b3b" }}
                                 onClick={handleDeleteTask}><FaRegTrashCan />Delete</button> : ""
+                    }
+
+                    {
+                        filterStatus !== "all" ?
+                            <p className="bugMsg"><CiWarning />use `all` filtering option to use acion buttons</p>
+                            :
+                            ""
                     }
 
 
