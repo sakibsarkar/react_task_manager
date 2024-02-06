@@ -171,8 +171,8 @@ nav {
     display: flex;
     flex-direction: column;
     width: 154px;
-    height: 158px;
     padding: 10px;
+    border-radius: 5px;
     border-radius: 5px;
     background-color: white;
     top: 30px;
@@ -190,10 +190,5 @@ nav {
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 730px) {
-    .logo {
-        display: none;
-    }
-}
 
 @media screen and (min-width: 1921px) {}

@@ -88,3 +88,12 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+
+
+@media screen and (max-width: 685px) {
+    .create_task_container form {
+        width: 90vw;
+        padding: 10px;
+    }
+}

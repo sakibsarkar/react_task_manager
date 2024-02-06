@@ -44,14 +44,11 @@ const Dashbar = () => {
 
                 {
                     showMoadl ?
-                        <div className="dashbarModal">
+                        <div className="dashbarModal" onClick={() => setShowModal(false)}>
 
-                            <NavLink to={"/dashboard/manageTask"}><LiaTasksSolid />Manage Task</NavLink>
-                            <NavLink to={"/dashboard/createTask"}><MdOutlineCreateNewFolder />Create task</NavLink>
-                            <NavLink to={"/dashboard/toDo"}><BiTask />To-do Task</NavLink>
-                            <NavLink to={"/dashboard/ongoing"}><LuFileClock />OnGoing Task</NavLink>
-                            <NavLink to={"/dashboard/completed"}><MdTask />Completed Task</NavLink>
-                            <NavLink to={"/dashboard/profile"}><FaRegUser />My profile</NavLink>
+                            <NavLink to={"/task/createTask"}><MdOutlineCreateNewFolder />Create task</NavLink>
+                            <NavLink to={"/task/myTask"}><LiaTasksSolid />My Task</NavLink>
+                            <NavLink to={"/task/completed"}><MdTask />Completed Task</NavLink>
                             <NavLink to={"/"}><IoIosHome />Home</NavLink>
                         </div>
 

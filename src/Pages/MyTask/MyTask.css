@@ -40,3 +40,17 @@
     cursor: pointer;
     height: 30px;
 }
+
+
+
+@media screen and (max-width: 874px) {
+    .task_boxs {
+        grid-template-columns: repeat(1, 95vw);
+    }
+}
+
+@media screen and (max-width:480px) {
+    .task_status {
+        flex-direction: column;
+    }
+}

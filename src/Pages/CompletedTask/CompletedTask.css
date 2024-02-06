@@ -12,4 +12,13 @@
 .completed_task_holder {
     display: grid;
     grid-template-columns: repeat(1, 800px);
+    gap: 20px;
+
+}
+
+
+@media screen and (max-width: 874px) {
+    .completed_task_holder {
+        grid-template-columns: repeat(1, 95vw);
+    }
 }

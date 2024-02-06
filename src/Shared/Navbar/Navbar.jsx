@@ -28,7 +28,7 @@ const Navbar = () => {
                     showMobileNav ?
                         <div className="navModal">
                             <NavLink to={"/"}>Home</NavLink>
-                            <NavLink to={"/myTask"}>My ask</NavLink>
+                            <NavLink to={"/task/myTask"}>My ask</NavLink>
                         </div>
 
                         : ""
