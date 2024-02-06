@@ -27,6 +27,7 @@ const CompletedTask = () => {
                                 setShouldOpen={setShouldOpen}
                                 shouldOpen={shouldOpen}
                                 setTask_data={setData}
+                                filterStatus={"completed"}
                                 index={index}
                                 task={task}
 

@@ -8,7 +8,7 @@ import { RxCross2 } from "react-icons/rx";
 import { toast } from "sonner";
 import { getItem } from "../../Hooks & Func/Localstorage";
 
-const TaskCard = ({ task, setShouldOpen, shouldOpen, index, setTask_data, }) => {
+const TaskCard = ({ task, setShouldOpen, shouldOpen, index, setTask_data, filterStatus }) => {
     const { taskName, taskDescription, taskDeadline, priority, status } = task || {}
 
     const isCompleted = status === "completed" ? true : false
@@ -31,7 +31,6 @@ const TaskCard = ({ task, setShouldOpen, shouldOpen, index, setTask_data, }) => 
         }).then((result) => {
 
             if (result.isConfirmed) {
-
                 let allTask = getItem("tasks")
                 allTask.splice(index, 1)
 
@@ -72,7 +71,6 @@ const TaskCard = ({ task, setShouldOpen, shouldOpen, index, setTask_data, }) => 
     const handleEditTask = (e) => {
 
         e.preventDefault()
-
         let allTask = getItem("tasks")
 
         // edited values
@@ -123,7 +121,7 @@ const TaskCard = ({ task, setShouldOpen, shouldOpen, index, setTask_data, }) => 
 
                 <div className="actions">
                     {
-                        isCompleted ? "" : <>
+                        !isCompleted && filterStatus === "all" ? <>
                             <button
                                 style={{ background: "#64bf4f" }}
                                 onClick={handleComplete}
@@ -133,13 +131,16 @@ const TaskCard = ({ task, setShouldOpen, shouldOpen, index, setTask_data, }) => 
                             <button
                                 style={{ background: "#3b7efd" }}
                                 onClick={() => setShowForm(true)}><FaRegTrashCan />Edit</button>
-
-                        </>
+                        </> : ""
                     }
 
-                    <button
-                        style={{ background: "#fd3b3b" }}
-                        onClick={handleDeleteTask}><FaRegTrashCan />Delete</button>
+                    {
+                        filterStatus === "all" ?
+                            <button
+                                style={{ background: "#fd3b3b" }}
+                                onClick={handleDeleteTask}><FaRegTrashCan />Delete</button> : ""
+                    }
+
 
                 </div>
 

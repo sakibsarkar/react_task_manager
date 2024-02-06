@@ -63,12 +63,12 @@ const MyTask = () => {
                                 <option value="medium">Medium</option>
                                 <option value="low">Low</option>
                             </select>
-                            
+
                         </div>
 
 
 
-                        <div className="task_boxs">
+                        <div className="task_boxs" key={filterStatus}>
                             {
                                 task_data?.map((task, index) => <TaskCard
                                     key={index}
@@ -76,6 +76,7 @@ const MyTask = () => {
                                     task={task}
                                     setTask_data={setTask_data}
                                     setShouldOpen={setShouldOpen}
+                                    filterStatus={filterStatus}
                                     shouldOpen={shouldOpen} />
                                 )
                             }
