@@ -1,3 +1,4 @@
+import CompletedTask from "../Pages/CompletedTask/CompletedTask";
 import CreateTask from "../Pages/CreateTask/CreateTask";
 import DashboardLayout from "../Layout/DashboardLayout";
 import Home from "../Pages/Home/Home";
@@ -31,7 +32,7 @@ export const routes = createBrowserRouter([
             ,
             {
                 path: "/task/completed",
-                element: <CreateTask />
+                element: <CompletedTask />
             }
         ]
     }
