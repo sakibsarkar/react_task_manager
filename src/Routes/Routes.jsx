@@ -1,3 +1,4 @@
+import CreateTask from "../Pages/CreateTask/CreateTask";
 import DashboardLayout from "../Layout/DashboardLayout";
 import Home from "../Pages/Home/Home";
 import Layout from "../Layout/Layout";
@@ -22,6 +23,10 @@ export const routes = createBrowserRouter([
             {
                 path: "/task/myTask",
                 element: <MyTask />
+            },
+            {
+                path: "/task/createTask",
+                element: <CreateTask />
             }
         ]
     }

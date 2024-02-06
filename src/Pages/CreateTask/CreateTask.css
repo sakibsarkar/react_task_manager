@@ -1,0 +1,90 @@
+.create_task_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.create_task_container form {
+    width: 600px;
+    display: flex;
+    box-shadow: 0 2px 16.8px 3.2px #00264214;
+    padding: 20px;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.create_task_container form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+
+.create_task_container form p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.create_task_container form .row {
+    width: 100%;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+
+
+.create_task_container form select {
+    width: 100% !important;
+    height: 33px;
+
+}
+
+.create_task_container form input {
+    width: calc(100% - 5px);
+    padding: 0 0 0 5px;
+    outline: none;
+    height: 30px;
+    border: 1px solid #000000;
+
+}
+
+.create_task_container form input:focus {
+    border: 1px solid #ff33a8;
+}
+
+.create_task_container form textarea {
+    width: calc(100% - 5px);
+    padding: 5px 0 0 5px;
+    outline: none;
+    resize: vertical;
+    min-height: 150px;
+    border: 1px solid #000000;
+}
+
+.create_task_container form textarea:focus {
+    border: 1px solid #ff33a8;
+
+}
+
+.create_task_container form button {
+    color: white;
+    border: none;
+    background: #ff33a8;
+    padding: 9px 0px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}

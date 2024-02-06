@@ -24,6 +24,9 @@
 .dashLinks a {
     color: black;
     padding: 20px 12px;
+    width: 88%;
+    margin: auto;
+    border-radius: 7px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -33,23 +36,23 @@
 
 
 .dashLinks a:hover {
-    background-color: #37b6ff4e;
+    background-color: #ff37f24e;
 }
 
 .dashLinks .active {
-    background-color: #37b5ff;
+    background-color: #ff33a8;
     color: white !important;
 }
 
 
 .dashLinks .active:hover {
-    background-color: #37b5ff;
+    background-color: #ff33a8;
     color: white !important;
 }
 
 .mobileDashbar {
     display: none;
-    background-color: #37b5ff;
+    background-color: #ff33a8;
     font-size: 34px;
     padding: 10px 26px;
     color: white;
@@ -88,7 +91,7 @@
 
 
 .dashbarModal .active {
-    color: #37b5ff;
+    color: #ff33a8;
     text-decoration: underline;
 }
 
